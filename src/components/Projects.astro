@@ -8,6 +8,7 @@ import Css from "./icons/Css.astro";
 import Tailwind from "./icons/TailwindCss.astro";
 import TypeScript from "./icons/TypeScript.astro";
 import ViteJs from "./icons/ViteJs.astro";
+import Node from "./icons/Node.astro";
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 
@@ -53,8 +54,33 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: ViteJs,
   },
+  NODE.JS: {
+    name: "nodejs",
+    class: "bg-[#609555] text-white",
+    icon: Node,
+
+  }
 };
 const PROJECTS = [
+
+   {
+    title: "Rocket Notes",
+    description:
+      "Aplicación front-end para gestionar, notas, enlaces y utilidades- integración front-end y back-end - React y Node.js",
+    link: "https://startnotes.netlify.app/",
+    github: "https://github.com/SuelenGalhardo/start_react_node",
+    image: "/projects/startnotes.png",
+    tags: [TAGS.HTML, TAGS.SASS, TAGS.REACT, TAGS.NODE],
+  },
+
+  {
+    title: "GitFav",
+    description: "aplicación donde puedes buscar tus repositorios favoritos en GitHub y darles ese toque especial de ⭐favorito.",
+    link: "https://suelengalhardo.github.io/favoriteIngithub/",
+    github: "https://github.com/SuelenGalhardo/favoriteIngithub",
+    image: "/projects/gitfav.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
 
 {
     title: "NLW-Notes",
