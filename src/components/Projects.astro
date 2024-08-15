@@ -8,6 +8,17 @@ import Css from "./icons/Css.astro";
 import Tailwind from "./icons/TailwindCss.astro";
 import TypeScript from "./icons/TypeScript.astro";
 import ViteJs from "./icons/ViteJs.astro";
+import Java from "./icons/Java.astro";
+import Spring from "./icons/Spring.astro";
+import Express from "./icons/Express.astro";
+import Angular from "./icons/Angular.astro";
+import NodeJs from "./icons/NodeJs.astro";
+import Jest from "./icons/Jest.astro";
+import ApiDog from "./icons/ApiDog.astro";
+import Postman from "./icons/Postman.astro";
+import Prisma from "./icons/Prisma.astro";
+import Zod from "./icons/Zod.astro";
+import Fastify from "./icons/Fastify.astro";
 
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
@@ -15,10 +26,11 @@ import LinkButton from "./LinkButton.astro";
 
 
 
+
 const TAGS = {
   HTML: {
     name: "Html",
-    class: "bg-black text-white",
+    class: "bg-[#003159] text-white",
     icon: Html,
   },
   TAILWIND: {
@@ -56,18 +68,117 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: ViteJs,
   },
+  JAVA: {
+    name: "Java",
+    class: "bg-[#003159] text-white",
+    icon: Java,
+  },
+  EXPRESS: {
+    name: "expressJs",
+    class: "bg-[#003159] text-white",
+    icon: Express,
+  },
+  SPRING: {
+    name: "Spring",
+    class: "bg-[#003159] text-white",
+    icon: Spring,
+  },
+  ANGULAR: {
+    name: "AngULAR",
+    class: "bg-[#003159] text-white",
+    icon: Angular,
+  },
+  NODE: {
+    name: "Node",
+    class: "bg-[#003159] text-white",
+    icon: NodeJs
+  },
+  JEST: {
+    name: "Jest",
+    class: "bg-[#003159] text-white",
+    icon: Jest
+  },
+    APIDOG: {
+      name: "APIDOG",
+      class: "bg-[#003159] text-white",
+      icon: ApiDog
+    },
+
+    POSTMAN: {
+      name: "POSMAN",
+      class: "bg-[#003159] text-white",
+      icon: Postman
+    },
+    PRISMA: {
+      name: "PRISMA",
+      class: "bg-[#003159] text-white",
+      icon: Prisma
+    },
+      ZOD: {
+        name: "ZOD",
+        class: "bg-[#003159] text-white",
+        icon: Zod
+      },
+      FASTIFY: {
+        name: "FASTIFY",
+        class: "bg-[#003159] text-white",
+        icon: Fastify
+      }
+
 
 };
 const PROJECTS = [
 
+
+{
+    title: "To Do List Application",
+    description:
+      "Aplicación Back-end gerenciador de tareas - Java17 - Spring Boot -Lombok - H2 database - Bcrypt",
+    link: "#",
+    github: "https://github.com/SuelenGalhardo/To-DoList_Java",
+    image: "/projects/java_springBoot.png",
+    tags: [TAGS.JAVA, TAGS.SPRING, TAGS.APIDOG],
+  },
+
+
+  {
+    title: "NLW-Journey",
+    description:
+      "Aplicación Back-end de gestión de viajes con node.js",
+    link: "#",
+    github: "https://github.com/SuelenGalhardo/To-DoList_Java",
+    image: "/projects/journeyNode.png",
+    tags: [TAGS.NODE, TAGS.POSTMAN, TAGS.TYPESCRIPT, TAGS.FASTIFY, TAGS.ZOD],
+  },
+
+{
+    title: "Rocket Notes-Back",
+    description:
+      "Aplicación Back-end para gestionar, notas, enlaces y utilidades- integración front-end y back-end - React y Node.js",
+    link: "https://startnotes.netlify.app/",
+    github: "https://github.com/SuelenGalhardo/start_node.js",
+    image: "/projects/databasestruccture.png",
+    tags: [TAGS.NODE, TAGS.EXPRESS, TAGS.JEST],
+  },
+
    {
-    title: "Rocket Notes",
+    title: "Rocket Notes-Front",
     description:
       "Aplicación front-end para gestionar, notas, enlaces y utilidades- integración front-end y back-end - React y Node.js",
     link: "https://startnotes.netlify.app/",
     github: "https://github.com/SuelenGalhardo/start_react_node",
     image: "/projects/startnotes.png",
     tags: [TAGS.HTML, TAGS.SASS, TAGS.REACT],
+  },
+
+  {
+    title: "Feed Ignite",
+    description:
+      "Aplicación Front-end que Imita una red social, creada con vite, components-propriedads-estados-imutabilidad y hooks",
+    link: "https://suelengalhardo.github.io/Feed_Ignite/",
+    github: "https://github.com/SuelenGalhardo/Feed_Ignite",
+    image: "/projects/FeedIgnit.png",
+    tags: [TAGS.REACT, TAGS.SASS, TAGS.VITEJS, TAGS.TYPESCRIPT],
   },
 
   {
