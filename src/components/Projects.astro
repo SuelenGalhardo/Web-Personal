@@ -19,6 +19,7 @@ import Postman from "./icons/Postman.astro";
 import Prisma from "./icons/Prisma.astro";
 import Zod from "./icons/Zod.astro";
 import Fastify from "./icons/Fastify.astro";
+import Postgres from "./icons/Postgres.astro";
 
 import Link from "./icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
@@ -123,7 +124,12 @@ const TAGS = {
         name: "FASTIFY",
         class: "bg-[#003159] text-white",
         icon: Fastify
-      }
+      },
+        POSTGRES: {
+          name: "POSTGRES",
+          class: "bg-[#003159] text-white",
+          icon: Postgres
+        }
 
 
 };
@@ -146,7 +152,7 @@ const PROJECTS = [
     link: "#",
     github: "https://github.com/SuelenGalhardo/ApiRest_Talent_Acq",
     image: "/projects/java_springBoot.png",
-    tags: [TAGS.JAVA, TAGS.SPRING, TAGS.APIDOG],
+    tags: [TAGS.JAVA, TAGS.SPRING, TAGS.APIDOG, TAGS.POSTGRES],
   },
 {
     title: "To Do List ApiRest",
